@@ -10,8 +10,7 @@
                 <f:content>
                     <Toolbar id="_IDGenToolbar1" ariaLabelledBy="Title2">
                         <Title id="Title2" text="Office"/>
-                        <ToolbarSpacer id="_IDGenToolbarSpacer1" />
-                        
+                        <ToolbarSpacer id="_IDGenToolbarSpacer1" />                        
                     </Toolbar>
                     <Label id="_IDGenLabel1" text="{i18n>lblUsuario}" />
                     <Input id="idusuario"/>
@@ -33,8 +32,11 @@
             </f:SimpleForm>
         </VBox>
         <Button id="_IDGenButton1" text="Criar" press="onCreate"></Button>
+        <Button id="_IDGenButton2" text="Deletar" press="onDelete"></Button>
+        <Button id="_IDGenButton3" text="Update" press="onUpdate"></Button>
+        <Button id="_IDGenButton4" text="Get" press="onQuery"></Button>
 
-        <Table id="idtabelaluno" items="{/AlunosFioriSet}">
+        <Table id="idtabelaluno" items="{/AlunosFioriSet}" mode="SingleSelect">
             <columns>
                 <Column id="_IDGenColumn1">
                     <Text id="_IDGenText1" text="{i18n>lblUsuario}" />
